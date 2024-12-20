@@ -1,0 +1,192 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #e3f2fd, #90caf9);
+  color: #333;
+  animation: backgroundFade 10s infinite alternate;
+}
+
+/* Background Fade Animation */
+@keyframes backgroundFade {
+  0% { background: linear-gradient(to right, #e3f2fd, #90caf9); }
+  50% { background: linear-gradient(to right, #90caf9, #1e88e5); }
+  100% { background: linear-gradient(to right, #1e88e5, #42a5f5); }
+}
+
+/* Main Content */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+h1, h2 {
+  color: #003366;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+section {
+  margin: 2rem 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Introduction Section */
+#introduction img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 10px;
+  border: 3px solid #00509e;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#introduction img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Education Section */
+#education {
+  background: linear-gradient(to right, #e3f2fd, #90caf9);
+  padding: 1rem;
+  border-radius: 8px;
+  color: #003366;
+}
+
+#education p {
+  text-align: justify;
+}
+
+/* Career Section */
+#career ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+#career li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #00509e;
+}
+
+/* Hobbies Section */
+#hobbies ul {
+  list-style-type: circle;
+  padding-left: 1.5rem;
+}
+
+#hobbies li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #1e88e5;
+}
+
+/* Traits Section */
+#traits ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+#traits li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #0d47a1;
+}
+
+/* Fun Facts Section */
+#fun-facts ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#fun-facts li {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background: #bbdefb;
+  border-left: 4px solid #1e88e5;
+  border-radius: 5px;
+}
+
+/* Gallery Section */
+#gallery .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+#gallery img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#gallery img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Famous Quote Section */
+#quote {
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 1rem 0;
+  background: #e1f5fe;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #00509e;
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: rgba(0, 51, 102, 0.9);
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+footer ul li {
+  margin: 0 1rem;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #ffcc00;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #ffdd00;
+}
